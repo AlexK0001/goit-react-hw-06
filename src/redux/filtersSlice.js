@@ -14,11 +14,8 @@ const filtersSlice = createSlice({
   },
 });
 
-// Екшени
 export const { changeFilter } = filtersSlice.actions;
 
-// Селектори
 export const selectNameFilter = state => state.filters.name;
 
-// Редюсер
 export default filtersSlice.reducer;
